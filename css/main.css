@@ -6,6 +6,18 @@
 		background-repeat: no-repeat;
 		background-color: #a3dcb9;
 	}
+
+	#container {
+		width: 100%;
+	}
+
+	.title {
+		font-family: Algerian;
+	}
+
+	#container img{
+		width: 100px;
+	}
 	
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
