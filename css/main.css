@@ -1,7 +1,8 @@
 /* Extra small devices (portrait phones, less than 576px)
   No media query since this is the default in Bootstrap */
 	body {
-		background: #000000;
+		background-image: url('../images/Valencia.jpg');
+		background-size: cover;
 	}
 	
 /* Small devices (landscape phones, 576px and up) */
