@@ -1,7 +1,7 @@
 /* Extra small devices (portrait phones, less than 576px)
   No media query since this is the default in Bootstrap */
 	body {
-		background-image: url('../images/Valencia.jpg');
+		background-image: url('../images/Blue-Wall.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-color: #a3dcb9;
@@ -21,7 +21,9 @@
 	
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
+	body {
+		background-image: url('../images/Valencia.jpg');
+	}
 }
 
 /* Medium devices (tablets, 768px and up) */
