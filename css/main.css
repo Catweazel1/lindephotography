@@ -5,6 +5,7 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-color: #a3dcb9;
+		color: #FFFFFF;
 	}
 
 	#container {
@@ -12,15 +13,16 @@
 	}
 
 	.title {
+		width: 100%;
 		font-family: Algerian;
 	}
 
 	#container img{
-		width: 100px;
+		width: 15%;
 	}
 	
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media (min-width: 568px) {
 	body {
 		background-image: url('../images/Valencia.jpg');
 	}
