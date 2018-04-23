@@ -1,30 +1,49 @@
 /* Extra small devices (portrait phones, less than 576px)
   No media query since this is the default in Bootstrap */
 	body {
-		background-image: url('../images/Blue-Wall.jpg');
-		background-size: cover;
+		background-image: url(../images/Blue-Wall.jpg);
+		width: 100%;
+		background-position: center;
 		background-repeat: no-repeat;
-		background-color: #a3dcb9;
+		background-size: cover;
+		background-color: #a6e0ba;
+		font-family: Algerian;
 		color: #FFFFFF;
 	}
 
-	#container {
-		width: 100%;
+	header {
+		display: flex;
 	}
 
-	.title {
-		width: 100%;
-		font-family: Algerian;
+	#left-header {
+		flex: 3 1 15%;
 	}
 
-	#container img{
-		width: 15%;
+	#right-header {
+		flex: 17 1 85%;
 	}
-	
+
+	img {
+		height: 100%;
+	}
+
+	.btn-primary {
+		font-family: "Times New Roman";
+		background-color: #75e5d1;
+		color: #383d41;
+		border-color: #4c6343;
+		font-weight: bold;
+	}
+
+	#btn-div {
+		text-align: center;
+	}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 568px) {
 	body {
-		background-image: url('../images/Valencia.jpg');
+		background-image: url(../images/Valencia.jpg);
+		font-size: 1.5em;
 	}
 }
 
@@ -40,5 +59,7 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
+	#right-header {
+		padding-top: 30px;
+	}
 }

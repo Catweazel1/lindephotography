@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Linde Photography - Welcome</title>
+	<title>Linde Photography - </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="js/jquery.js"></script>
@@ -11,17 +11,6 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<header>
-		<div id="left-header">
-			<img src="images/logo.png">
-		</div>
-		<div id="right-header">
-			<h1>Linde Photography</h1>
-			<p>Naturally Beautiful Pictures</p>
-		</div>
-	</header>
-		<div id="btn-div">
-			<button class="btn-lg btn-primary" onclick="location.href='contents.php'">Enter</button>
-		</div>
+
 </body>
 </html>
