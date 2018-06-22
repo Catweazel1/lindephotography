@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<header>
+	<!-- <header>
 		<div id="left-header">
 			<img src="images/logo.png">
 		</div>
@@ -22,6 +22,17 @@
 	</header>
 		<div id="btn-div">
 			<button class="btn-lg btn-primary" onclick="location.href='contents.php'">Enter</button>
+		</div> -->
+		<div class="container">
+			<div class="jumbotron">
+				<img src="images/logo.png">
+				<h1 class="display-4">Linde Photography</h1>
+				<p class="lead">Naturally Beautiful Pictures</p>
+				<hr class="my-4">
+				<div id="btn-div">
+					<button class="btn-lg btn-primary" onclick="location.href='contents.php'">Enter</button>
+				</div>
+			</div>
 		</div>
 </body>
 </html>
