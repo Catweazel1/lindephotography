@@ -12,7 +12,19 @@
 </head>
 <body>
 	<div class="container">
-		
+		<?php
+			include('header.php');
+			include('sidebar.php');
+		 ?>
+		 <div>
+		 	<h1>Welcom to the Administration Page.</h1>
+		 	<p>Here you can administer changes to your site.</p>
+		 </div>
 	</div>
+	<?php 
+		if(isset($_GET['album'])) {
+			include('album_index.php');
+		}
+	 ?>
 </body>
 </html>
