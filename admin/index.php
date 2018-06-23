@@ -14,12 +14,16 @@
 	<div class="container">
 		<?php
 			include('header.php');
-			include('sidebar.php');
-		 ?>
-		 <div>
-		 	<h1>Welcom to the Administration Page.</h1>
-		 	<p>Here you can administer changes to your site.</p>
-		 </div>
+		?>
+		<div class="row">
+			<?php
+				include('sidebar.php');
+			?>
+			<div class="col-sm-6">
+				<h1>Welcome to the Administration Page.</h1>
+				<p>Here you can administer changes to your site.</p>
+			</div>
+		</div>
 	</div>
 	<?php 
 		if(isset($_GET['album'])) {
