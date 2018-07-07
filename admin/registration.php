@@ -27,6 +27,11 @@
 			)";
 
 			$result = mysqli_query($connect, $sql) or die("Bad query: $sql");
+
+			$hashed = password_hash($pass1, PASSWORD_BCRYPT);
+
+			$sql = "INSERT INTO users (username, password) VALUES ('$username', '$hashed')";
+			$result = mysqli_query($connect, $sql) or die("Bad query: $sql");
 		} // IF insert
 ?>
 
