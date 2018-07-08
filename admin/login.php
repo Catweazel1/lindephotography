@@ -51,12 +51,5 @@
 		} else {
 			echo "<script>alert('Username and / or Password are incorrect.')</script>";
 		}
-		/*
-		if($count == 1) {
-			$_SESSION['username'] = $username;
-			header("location: index.php");
-		} else {
-			echo "<script>alert('Username or password is incorrect')</script>";
-		}*/
 	}
 ?>
