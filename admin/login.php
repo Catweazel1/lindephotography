@@ -45,7 +45,7 @@
 					header("location: index.php");
 				} else {
 					// return false;
-					echo "<script>alert('Password is incorrect.')</script>"
+					echo "<script>alert('Password is incorrect.')</script>";
 				}
 			}
 		} else {
