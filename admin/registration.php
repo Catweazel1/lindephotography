@@ -1,6 +1,6 @@
 <?php 
 	if(!isset($_POST['username'])) {
-		require_once'includes/connect.php';
+		require_once('includes/connect.php');
 
 		$username = mysqli_real_escape_string($connect, $_POST['username']);
 		$pass1 = mysqli_real_escape_string($connect, $_POST['pass1']);
