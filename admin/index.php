@@ -26,7 +26,7 @@
 			<?php
 				include('sidebar.php');
 			?>
-			<div class="col-sm-6">
+			<div class="col-sm-8">
 				<h1>Welcome to the Administration Page.</h1>
 				<p>Here you can administer changes to your site.</p>
 			</div>
