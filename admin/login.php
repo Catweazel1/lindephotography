@@ -16,7 +16,7 @@
 </head>
 <body>
 	<div class="container">
-		<form method="post" action="login.php" class="form">
+		<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" class="form">
 			<h1>Administration Login Form</h1>
 			<div>User Name: </div><div><input type="text" name="username" class="form-control"></div>
 			<div>Password: </div><div><input type="password" name="password" class="form-control"></div>

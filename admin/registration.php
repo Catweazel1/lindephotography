@@ -13,6 +13,7 @@
 <body>
 	<div class="container">
 		<form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="form">
+			<h1>Administrator Registration Form</h1>
 			<label class="form-label">User Name:</label> <input type="text" name="username" class="form-control"><br>
 			<label>Password:</label> <input type="password" name="pass1" class="form-control"><br>
 			<label>Repeat Password:</label> <input type="password" name="pass2" class="form-control"><br>
