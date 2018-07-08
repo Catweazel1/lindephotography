@@ -1,5 +1,5 @@
 <?php 
-	if(isset($_POST['username'])) {
+	if(!isset($_POST['username'])) {
 		require_once'includes/connect.php';
 
 		$username = mysqli_real_escape_string($connect, $_POST['username']);
@@ -61,5 +61,7 @@
 </html>
 
 <?php 
+	} else {
+		header("Location: index.php");
 	}
 ?>
