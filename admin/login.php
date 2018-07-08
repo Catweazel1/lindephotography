@@ -28,7 +28,7 @@
 
 <?php 
 	include('includes/connect.php');
-	if(isset($_GET['login'])) {
+	if(!isset($_GET['login'])) {
 		$username = mysqli_real_escape_string($connect, $_POST['username']);
 		$password = mysqli_real_escape_string($connect, $_POST['password']);
 		
@@ -39,7 +39,7 @@
 		
 		if(mysqli_num_rows($result) > 0) {
 			while($row = mysqli_fetch_array($result)) {
-				if(password_varify($password, $row['password'])) {
+				if(password_verify($password, $row['password'])) {
 					// return true;
 					$_SESSION['username'] = $username;
 					header("location: index.php");
