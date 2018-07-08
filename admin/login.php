@@ -28,7 +28,8 @@
 
 <?php 
 	include('includes/connect.php');
-	if(!isset($_GET['login'])) {
+
+	if(isset($_POST['login'])) {
 		$username = mysqli_real_escape_string($connect, $_POST['username']);
 		$password = mysqli_real_escape_string($connect, $_POST['password']);
 		
