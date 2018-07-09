@@ -14,10 +14,10 @@
 </body>
 </html>
 <?php 
-	if(isset($_POST['submit']) && !empty($_POST['album'])) {
+	if((isset($_POST['submit'])) && (!empty($_POST['album']))) {
 		include('includes/connect.php');
 		$album = $_POST['album'];
-		$query = "insert into contents(contents) values ($album)";
+		$query = "insert into contents (contents) values ('$album')";
 		mysqli_query($connect, $query);
 		if(!file_exists('../images/'.$album)) {
 			mkdir('../images/' . $album, 0777, true);
