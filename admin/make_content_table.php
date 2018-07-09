@@ -1,5 +1,5 @@
 <?php 
-	$query = "select id, contents from contents"
+	$query = "select id, contents from contents";
 	$result = mysqli_query($connect, $query);
 	echo "<div class='row'>";
 	while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
