@@ -21,9 +21,9 @@
 		mysqli_query($connect, $query);
 		if(!file_exists('../images/'.$album)) {
 			mkdir('../images/' . $album, 0777, true);
+			header("location: album_index.php");
 		}
-		header("location: album_index.php");
-	} else {
+	} else if((isset($_POST['submit'])) && (empty($_POST['album']))) {
 		echo "<script>alert('Please fill in album name!');</script>";
 	}
 ?>
