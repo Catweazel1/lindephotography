@@ -15,7 +15,7 @@
 
 		$query = "DELETE FROM contents WHERE id = '$id'";
 		mysqli_query($connect, $query);
-		deleteAll('../images/') . $contents;
+		deleteAll('../images/' . $contents);
 		header("location: album_index.php");
 	}
 ?>
