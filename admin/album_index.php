@@ -27,7 +27,7 @@
 				<div>
 					<nav>
 						<ul>
-							<a href="optitmize.php">Defragment Site Database</a>
+							<a href="optimize.php">Defragment Site Database</a>
 						</ul>
 					</nav>
 				</div>
