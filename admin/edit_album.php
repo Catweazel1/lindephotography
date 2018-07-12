@@ -22,6 +22,7 @@
 			include('includes/connect.php');
 			echo "<div class='row'>";
 			if(isset($_GET['id'])) {
+				$id = $_GET['id'];
 				$query = "SELECT contents from contents where id = '$id' Limit 1";
 				$result = mysqli_query($connect, $query);
 				$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
