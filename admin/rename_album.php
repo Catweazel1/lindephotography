@@ -36,7 +36,7 @@
 		}
 	?>
 
-	<form class="form" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" >
+	<form class="form" action="rename_album.php?id=<?php echo $id; ?>" method="post" >
 		Rename Album: <input class="form-control" type="text" name="album" value="<?php echo $album; ?>" >
 		<input class="btn btn-info" type="submit" name="submit" value="Submit">
 	</form>
