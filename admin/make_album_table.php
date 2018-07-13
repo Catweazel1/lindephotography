@@ -5,6 +5,9 @@
 <?php 
 	$query = "SELECT contents FROM contents WHERE id = '$id';";
 	$result = mysqli_query($connect, $query);
+	$contents = mysqli_fetch_row($result);
+
+	$query = "SELECT id, title, picture, post_date FROM picures WHERE content_id = '$id'";
 	while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 		$photo_id = $row['id'];
 		$title = $row['title'];
