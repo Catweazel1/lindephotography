@@ -13,10 +13,10 @@
 		$date = $row['post_date'];
 
 		echo "<div class='row'>
-			<div class='col-sm'>$title</div>
-			<a class='col-sm' href='edit_photo.php?id=$photo_id'><img src='../images/$photo' width='150px'></a>
-			<div class='col-sm'>$date</div>
-			<a class='col-sm' href='delete_photo.php?id=$photo_id'>Yes</a>
+			<div class='col-sm'>" . $title . "</div>
+			<a class='col-sm' href='edit_photo.php?id=" . $photo_id . "'><img src='../images/" . $photo . "' width='150px'></a>
+			<div class='col-sm'>" . $date . "</div>
+			<a class='col-sm' href='delete_photo.php?id=" . $photo_id . "'>Yes</a>
 		</div>";
 	}
 ?>
