@@ -3,7 +3,7 @@
 </div>
 
 <?php 
-	$query = "SELECT contents FROM contents WHERE id = '$id';"
+	$query = "SELECT contents FROM contents WHERE id = '$id';";
 	$result = mysqli_query($connect, $query);
 	while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 		$photo_id = $row['id'];
