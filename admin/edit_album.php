@@ -31,7 +31,7 @@
 				exit();
 			}
 		?>
-		<nav class="navbar ">
+		<nav class="navbar">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
 					<a class="nav-link" href="album_index.php?id=<?php echo $id; ?>">Edit Album Name</a>

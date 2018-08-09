@@ -18,20 +18,20 @@
 		include('header.php');
 		include('sidebar.php');
 		include('includes/connect.php');
-
 		$id = $_GET['id'];
 		$query = "SELECT id, title, picture, description, content_id FROM pictures WHERE id = '$id'";
-		$result = mysqli_query($connect, $query);
-		$pic_info = mysqli_fetch_array($result, MYSQLI_ASSOC);
+		$row = mysqli_query($connect, $query);
+		$pic_info = mysqli_fetch_array($row, MYSQLI_ASSOC);
 
 		$title = $pic_info['title'];
 		$old_picture = $pic_info['picture'];
+		//$_FILES['image']['name'] = $picture;
 		$description = $pic_info['description'];
 		$content_id = $pic_info['content_id'];
 
-		$query = "SELECT contents FROM contents WHERE id = '$content_id'";
-		$result = mysqli_query($connect, $query);
-		$contents = mysqli_fetch_row($result);
+		$query = "SELECT Contents FROM contents WHERE id = '$content_id'";
+		$row = mysqli_query($connect, $query);
+		$contents = mysqli_fetch_row($row);
 	?>
 	<div class="container">
 		<form class="form" action="edit_photo.php?id=<?php echo $id; ?>" method="post">
@@ -50,7 +50,7 @@
 		</form>	
 	</div>
 	<?php 
-		if(isset($_POST['submit'])) {
+		if (isset($_POST['submit'])){
 			$target = "../images/" . $contents[0] . "/";
 			$target = $target . basename($_FILES['image']['name']);
 			$title = $_POST['title'];
