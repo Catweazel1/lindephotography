@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<title>Linde Photography - Welcome</title>
-<?php include('includes/html_header.php'); ?>
+	<?php include('includes/html_header.php'); ?>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 		<div class="container">

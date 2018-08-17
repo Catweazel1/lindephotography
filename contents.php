@@ -2,15 +2,12 @@
 <html lang="en">
 <head>
 	<title>Linde Photography - </title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/popper.js"></script>
-	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<?php include('includes/html_header.php'); ?>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-
+	<div class="container">
+		<?php include('make_content_table.php'); ?>
+	</div>
 </body>
 </html>
