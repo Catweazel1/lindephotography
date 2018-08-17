@@ -2,35 +2,23 @@
 <html lang="en">
 <head>
 	<title>Linde Photography - Welcome</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/popper.js"></script>
-	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+<?php include('includes/html_header.php'); ?>
 </head>
 <body>
-	<!-- <header>
-		<div id="left-header">
-			<img src="images/logo.png">
-		</div>
-		<div id="right-header">
-			<h1>Linde Photography</h1>
-			<p>Naturally Beautiful Pictures</p>
-		</div>
-	</header>
-		<div id="btn-div">
-			<button class="btn-lg btn-primary" onclick="location.href='contents.php'">Enter</button>
-		</div> -->
 		<div class="container">
 			<div class="jumbotron">
-				<img src="images/logo.png">
-				<h1 class="display-4">Linde Photography</h1>
-				<p class="lead">Naturally Beautiful Pictures</p>
-				<hr class="my-4">
-				<div id="btn-div">
-					<button class="btn-lg btn-primary" onclick="location.href='contents.php'">Enter</button>
+				<div class="row">
+					<div class="col-sm-2">
+						<img class="image-responsive" src="images/logo.png" style="width: 100%;">
+					</div>
+					<div class="col-sm-10">
+						<h1 class="text-center"><strong>Linde Photography</strong></h1>
+						<div class="text-center">Naturally Beautiful Pictures</div>
+						<hr class="my-4">
+						<div class="text-center">
+							<button class="btn btn-primary text-center" onclick="location.href='contents.php'">Enter</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
